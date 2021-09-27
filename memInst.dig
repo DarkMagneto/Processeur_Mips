@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>8,8,8,8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Adresse mémoire 32 bits comprise entre 0x400000 et 0x0FFFFFFFC</string>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Ad</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Code instruction 32 bits</string>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Op</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="880" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Sub</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="280" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>4194304</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>2,24,6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Code instruction lu depuis la mémoire de code 32 bits</string>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="620" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Adresse instruction à partir de 0</string>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>24</int>
+        </entry>
+      </elementAttributes>
+      <pos x="460" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectBottom</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Vers la mémoire</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>10</int>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>mirror</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Input Splitting</string>
+          <string>8,8,8,8</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectBottom</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Pilote mémoire de d&apos;instruction Novembre 2020</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>45</int>
+        </entry>
+        <entry>
+          <string>RectRight</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectBottom</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>1</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="140" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectBottom</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>2</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="880" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>RectBottom</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>textFontSize</string>
+          <int>10</int>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Adresse / 4</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>4</int>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>10</int>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>2</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>6 bits inutilisés</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>4</int>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="200"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="700" y="160"/>
+      <p2 x="800" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="100"/>
+      <p2 x="280" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="100"/>
+      <p2 x="380" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="180"/>
+      <p2 x="800" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="180"/>
+      <p2 x="880" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="180"/>
+      <p2 x="260" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="620" y="120"/>
+      <p2 x="680" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="120"/>
+      <p2 x="800" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="120"/>
+      <p2 x="460" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="120"/>
+      <p2 x="280" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="140"/>
+      <p2 x="800" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="140"/>
+      <p2 x="240" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="140"/>
+      <p2 x="280" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="120"/>
+      <p2 x="240" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="60"/>
+      <p2 x="400" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="140"/>
+      <p2 x="400" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="140"/>
+      <p2 x="260" y="180"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
